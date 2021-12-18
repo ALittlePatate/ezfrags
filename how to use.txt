@@ -1,0 +1,20 @@
+The hack will start loading once CS:GO is started.
+If the hack doesn't work, try clicking the 'Unblock' button in the .exe's properties.
+Running the hack with administrator rights might sort it out, too.
+
+Keys:
+- Left ALT - hold LALT to lock onto an enemy
+- SPACE - hold SPACE to use bunny hop
+- MOUSE5 and Middle Mouse Button - triggerbot hold keys
+
+- F6 - cycle through triggerbot modes (autofire, hold key, disabled - default)
+- SHIFT+F6 - cycle through triggerbot delays (10, 30 - default, 50, 80, 110, 140)
+- F7 - toggle aim assist
+- SHIFT+F7 - toggle aim assist mode (rage/legit)
+- F8 - toggle aimlock
+- SHIFT+F8 - toggle aimlock target (head/chest)
+- F9 - toggle GlowESP
+- SHIFT+F9 - toggle radar hack
+- F10 - toggle no flash hack
+- F11 - toggle bunny hop
+- SHIFT+F11 - toggle kill message
