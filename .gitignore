@@ -1,3 +1,11 @@
+#Visual studio stuff
 .vs
 Debug
 Ezfrags/Debug
+
+#IDA stuff
+Reversing/ezfrags.exe.id0
+Reversing/ezfrags.exe.id1
+Reversing/ezfrags.exe.id2
+Reversing/ezfrags.exe.nam
+Reversing/ezfrags.exe.til

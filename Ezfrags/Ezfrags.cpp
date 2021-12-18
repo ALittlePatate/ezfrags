@@ -129,6 +129,15 @@ int main()
 		|| !cheat_thread_state::kill_message_thread_status)
 		Sleep(100u);
 
+	settings::glow_esp_bool = 1;
+	settings::trigger_mode_switch_1 = 0;
+	settings::aimlock_bool = 1;
+	settings::radar_bool = 1;
+	settings::aim_assist_bool = 1;
+	settings::trigger_mode_switch_2 = 0;
+	settings::bunnyhop_bool = 1;
+	settings::kill_message_bool = 1;
+	settings::no_flash_bool = 1;
 	update();
 
 	while (WaitForSingleObject(Mem::process_handle, 0)) {
