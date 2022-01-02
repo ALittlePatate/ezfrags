@@ -7,7 +7,7 @@
 #include <iostream>
 #include <Windows.h>
 
-//This function is about 80% decompiled
+//This function is about 90% decompiled
 void bunnyhop_thread() {
 	cheat_thread_state::bunnyhop_thread_status = 1;
 	while (1) {

@@ -13,4 +13,5 @@ namespace Signatures {
 namespace Netvars {
 	static int m_fFlags;
 	static int m_flFlashMaxAlpha;
+	static int m_bSpotted;
 }

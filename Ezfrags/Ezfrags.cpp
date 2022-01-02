@@ -37,6 +37,8 @@ int main()
 	std::cout << "\n" << "Loading csgo.exe";
 	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)Mem::get_csgo, 0, 0, 0);
 
+	//All this instant thing is just from me, that doesn't figure in the original code
+	//So yeah that's to change ig
 	bool instant_csgo = true;
 	while (!Mem::csgo_found)
 	{
@@ -111,14 +113,14 @@ int main()
 
 	get_sigs::start();
 
-	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)radar_thread, 0, 0, 0);// radar_thread
-	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)aim_assist_thread, 0, 0, 0);// aim_assist_thread
-	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)no_flash_thread, 0, 0, 0);// no_flash_thread
-	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)bunnyhop_thread, 0, 0, 0);// bunnyhop_thread
-	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)aimlock_thread, 0, 0, 0);// aimlock_thread
-	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)glow_esp_thread, 0, 0, 0);// glow_esp_thread
-	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)kill_message_thread, 0, 0, 0);// kill_message_thread
-	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)trigger_thread, 0, 0, 0);// trigger_thread
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)radar_thread, 0, 0, 0);// Stuck
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)aim_assist_thread, 0, 0, 0);//
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)no_flash_thread, 0, 0, 0);// Done !
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)bunnyhop_thread, 0, 0, 0);// Done !
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)aimlock_thread, 0, 0, 0);//
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)glow_esp_thread, 0, 0, 0);//
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)kill_message_thread, 0, 0, 0);//
+	CreateThread(0, 0, (LPTHREAD_START_ROUTINE)trigger_thread, 0, 0, 0);//
 	while (!cheat_thread_state::aim_assist_thread_status
 		|| !cheat_thread_state::aimlock_thread_status
 		|| !cheat_thread_state::no_flash_thread_status

@@ -16,6 +16,7 @@ namespace get_sigs {
 		std::unique_ptr<NetvarsClass> NetvarManager(new NetvarsClass((uintptr_t)Mem::dw_client_address.modBaseAddr + dwGetAllClasses_offset));
 		Netvars::m_fFlags = NetvarManager->NETVAR("DT_CSPlayer", "m_fFlags");
 		Netvars::m_flFlashMaxAlpha = NetvarManager->NETVAR("DT_CSPlayer", "m_flFlashMaxAlpha");
+		Netvars::m_bSpotted = NetvarManager->NETVAR("DT_BaseEntity", "m_bSpotted");
 		
 		//Signatures
 		Signatures::dwLocalPlayer = Mem::FindAddress(L"client.dll", "\x8D\x34\x85\x00\x00\x00\x00\x89\x15\x00\x00\x00\x00\x8B\x41\x08\x8B\x48\x04\x83\xF9\xFF", "xxx????xx????xxxxxxxxx", 3, 4);

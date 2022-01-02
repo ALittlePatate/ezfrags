@@ -161,5 +161,4 @@ namespace Mem {
     template<typename T> void WPM(SIZE_T address, T buffer) {
         WriteProcessMemory(process_handle, (LPVOID)address, &buffer, sizeof(buffer), NULL);
     }
-
 }
