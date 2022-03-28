@@ -18,10 +18,19 @@
 #include "Settings.hpp"
 #include "Ezfrags.h"
 
+#include "StringObfuscation.hpp"
+
 time_t TimeUpdate;
+time_t current_time; // eax
 
 int main()
 {
+	start_obfuscation();
+	current_time = time(0);                     // current time in seconds
+	srand((unsigned int)current_time);			// sets the seed for random numbers to the current time
+                                                // randomness will be used later for the kill message
+
+	std::cout << console_title << std::endl;
 	SetConsoleTitleA("EZfrags CS:GO multihack v9.65 public [www.EZfrags.co.uk]"); //Ezfrag premium ++ spinbout edition
 	std::cout << "EZfrags CS:GO multihack v9.65 public [www.EZfrags.co.uk]" << "\n";
 
